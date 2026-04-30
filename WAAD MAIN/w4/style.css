@@ -1,0 +1,77 @@
+:root {
+    --primary: #4f46e5;
+    --dark: #0f172a;
+    --light: #f8fafc;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    background: var(--primary);
+    color: white;
+    padding: 3rem;
+}
+
+/* Grid for Learning Paths */
+.path-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.path-card {
+    background: white;
+    padding: 1.5rem;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+}
+
+/* Dashboard Layout */
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 2rem;
+}
+
+.sidebar {
+    background: #e2e8f0;
+    padding: 1rem;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th {
+    background: var(--primary);
+    color: white;
+    padding: 12px;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background: #f1f5f9;
+}

@@ -1,0 +1,93 @@
+:host {
+	display: block;
+	padding: 12px;
+	background: #f4f7fb;
+}
+
+.todo-page {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.todo-card {
+	padding: 16px;
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.todo-hero h2 {
+	margin: 0;
+}
+
+.todo-composer,
+.todo-item {
+	display: flex;
+	gap: 8px;
+}
+
+.todo-composer input,
+.todo-composer button,
+.todo-actions button {
+	border: 1px solid #d1d5db;
+	border-radius: 10px;
+	padding: 10px 12px;
+}
+
+.todo-composer input {
+	flex: 1;
+}
+
+.todo-composer button {
+	background: #2563eb;
+	color: #fff;
+	border: 0;
+}
+
+.todo-list {
+	display: grid;
+	gap: 10px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.todo-item {
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px;
+	border: 1px solid #e5e7eb;
+	border-radius: 12px;
+	background: #f9fafb;
+}
+
+.todo-text {
+	word-break: break-word;
+}
+
+.todo-actions {
+	display: flex;
+	gap: 6px;
+}
+
+.ghost {
+	background: #dbeafe;
+	color: #1d4ed8;
+}
+
+.danger {
+	background: #fee2e2;
+	color: #b91c1c;
+}
+
+@media (max-width: 640px) {
+	.todo-composer,
+	.todo-item {
+		flex-direction: column;
+	}
+
+	.todo-composer button,
+	.todo-actions button {
+		width: 100%;
+	}
+}

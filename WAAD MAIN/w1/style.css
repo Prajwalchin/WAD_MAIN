@@ -1,0 +1,61 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+/* Responsive Container */
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+td img {
+    width: 100px;
+    /* Set your preferred size */
+    height: 100px;
+    /* Keep width and height the same for a square look */
+    object-fit: cover;
+    /* This prevents stretching and maintains aspect ratio */
+    border-radius: 4px;
+    /* Optional: adds a nice modern rounded edge */
+    display: block;
+    /* Removes any weird spacing issues below the image */
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Pagination Styling */
+.pagination {
+    margin-top: 15px;
+}
+
+.pagination button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}

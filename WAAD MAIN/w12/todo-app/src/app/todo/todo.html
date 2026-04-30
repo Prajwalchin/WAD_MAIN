@@ -1,0 +1,40 @@
+    <div class="todo-page">
+  <section class="todo-card">
+    <div class="todo-hero">
+      <p class="eyebrow">Daily planner</p>
+      <h2>To-Do List</h2>
+      <p class="subtitle">Capture tasks quickly, then edit or remove them as your day changes.</p>
+    </div>
+
+    <div class="todo-composer">
+      <input [(ngModel)]="task" placeholder="Enter a task" aria-label="Task name" />
+      <button type="button" (click)="addTask()">
+        {{ editIndex !== null ? 'Update Task' : 'Add Task' }}
+      </button>
+    </div>
+
+    <div class="todo-meta">
+      <span>{{ tasks.length }} item{{ tasks.length === 1 ? '' : 's' }}</span>
+      <span class="dot">•</span>
+      <span>{{ editIndex !== null ? 'Editing task' : 'Ready to add' }}</span>
+    </div>
+
+    <ul class="todo-list" *ngIf="tasks.length > 0; else emptyState">
+      <li class="todo-item" *ngFor="let t of tasks; let i = index">
+        <div class="todo-text">{{ t }}</div>
+        <div class="todo-actions">
+          <button type="button" class="ghost" (click)="editTask(i)">Edit</button>
+          <button type="button" class="danger" (click)="deleteTask(i)">Delete</button>
+        </div>
+      </li>
+    </ul>
+
+    <ng-template #emptyState>
+      <div class="empty-state">
+        <div class="empty-icon">✦</div>
+        <h3>No tasks yet</h3>
+        <p>Add your first task to get started.</p>
+      </div>
+    </ng-template>
+  </section>
+</div>
