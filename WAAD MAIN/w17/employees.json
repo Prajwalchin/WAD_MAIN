@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Rahul Sharma",
+    "designation": "Software Engineer",
+    "department": "IT",
+    "salary": 60000,
+    "image": "/images/emp1.jpg"
+  },
+  {
+    "name": "Priya Mehta",
+    "designation": "HR Manager",
+    "department": "HR",
+    "salary": 50000,
+    "image": "/images/emp2.jpg"
+  },
+  {
+    "name": "Amit Joshi",
+    "designation": "Data Analyst",
+    "department": "Analytics",
+    "salary": 70000,
+    "image": "/images/emp3.jpg"
+  }
+]

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects - Portfolio</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div data-role="page" id="projects">
+        <div data-role="header" data-position="fixed">
+            <h1>Projects</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="index.html" data-ajax="false">About</a></li>
+                    <li><a href="projects.html" class="ui-btn-active" data-ajax="false">Projects</a></li>
+                    <li><a href="skills.html" data-ajax="false">Skills</a></li>
+                    <li><a href="contact.html" data-ajax="false">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h2 class="section-title">Projects</h2>
+            <p class="page-intro">A few projects that reflect my interests in AI, IoT, and real-world systems.</p>
+
+            <div class="project-card featured">
+                <span class="project-tag">Featured</span>
+                <h3>HealthMobi - Medication Adherence Monitoring System</h3>
+                <p>HealthMobi is an AI and IoT-based smart medication adherence system designed to help patients take medicines on time and improve healthcare management.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Tata Motors Manufacturing Analysis System</h3>
+                <p>A manufacturing and production monitoring project inspired by industrial workflows used in automotive industries like Tata Motors.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Vehicle Social Media Management &amp; Content Experience</h3>
+                <p>Worked on creating and managing digital automotive-related content for vehicle-focused social media platforms and communities.</p>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4><span class="footer-label">Projects Section</span> <span id="year"></span></h4>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us - PICT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+<div data-role="page" id="contact">
+    <div data-role="header" class="header-bg">
+        <a href="index.html" data-ajax="false" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all">Home</a>
+        <h1>Contact Us</h1>
+        <div data-role="navbar" style="margin-top:8px;">
+            <ul>
+                <li><a href="index.html" data-transition="fade" data-ajax="false">Home</a></li>
+                <li><a href="about.html" data-transition="slide" data-ajax="false">About</a></li>
+                <li><a href="academics.html" data-transition="slide" data-ajax="false">Departments</a></li>
+                <li><a href="courses.html" data-transition="slide" data-ajax="false">Courses</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <h2>Reach Out to Us</h2>
+        <p><strong>Address:</strong> Survey No. 27, Near Trimurti Chowk, Dhankawadi, Pune, Maharashtra 411043</p>
+        <p><strong>Phone:</strong> +91 20 2437 1101</p>
+        <p><strong>Email:</strong> principal@pict.edu</p>
+
+        <form method="post" action="#">
+            <div class="ui-field-contain">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                
+                <label for="info">Inquiry / Message:</label>
+                <textarea name="info" id="info"></textarea>
+            </div>
+            <input type="submit" data-inline="true" value="Send Message" class="ui-btn ui-corner-all ui-btn-b">
+        </form>
+    </div>
+
+    <div data-role="footer" class="footer-bg">
+        <h4>&copy; 2026 PICT Pune</h4>
+    </div>
+</div>
+</body>
+</html>

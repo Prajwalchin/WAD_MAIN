@@ -1,0 +1,19 @@
+.banner {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+        }
+        .header-bg {
+            background-color: #003366 !important;
+            color: white !important;
+            text-shadow: none !important;
+        }
+        .footer-bg {
+            background-color: #f4f4f4 !important;
+            text-shadow: none !important;
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+        }

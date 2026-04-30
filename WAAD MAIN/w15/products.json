@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Wireless Headphones",
+    "price": 2499,
+    "image": "https://picsum.photos/seed/product1/400/300"
+  },
+  {
+    "name": "Smart Watch",
+    "price": 3999,
+    "image": "https://picsum.photos/seed/product2/400/300"
+  },
+  {
+    "name": "Bluetooth Speaker",
+    "price": 1799,
+    "image": "https://picsum.photos/seed/product3/400/300"
+  },
+  {
+    "name": "Gaming Mouse",
+    "price": 999,
+    "image": "https://picsum.photos/seed/product4/400/300"
+  },
+  {
+    "name": "Laptop Stand",
+    "price": 1299,
+    "image": "https://picsum.photos/seed/product5/400/300"
+  },
+  {
+    "name": "Mechanical Keyboard",
+    "price": 2899,
+    "image": "https://picsum.photos/seed/product6/400/300"
+  },
+  {
+    "name": "USB-C Hub",
+    "price": 1499,
+    "image": "https://picsum.photos/seed/product7/400/300"
+  },
+  {
+    "name": "Portable Charger",
+    "price": 2199,
+    "image": "https://picsum.photos/seed/product8/400/300"
+  }
+]

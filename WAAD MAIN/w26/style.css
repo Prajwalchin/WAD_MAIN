@@ -1,0 +1,110 @@
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #f5f9ff, #eef5ff);
+    color: #10202a;
+    margin: 0;
+}
+
+.ui-header,
+.ui-footer{
+    background: #0b5394;
+    color: #fff;
+    border: 0;
+    text-shadow: none;
+}
+
+.ui-header h1,
+.ui-footer h4{
+    letter-spacing: 0.3px;
+}
+
+.ui-content{
+    padding: 1rem;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.home-hero{
+    background: linear-gradient(135deg, #0b5394, #1e6cb6);
+    color: #fff;
+    padding: 1.1rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(11, 83, 148, 0.2);
+}
+
+.hero-kicker{
+    margin: 0;
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.hero-copy{
+    margin-bottom: 0;
+}
+
+.section-note{
+    margin: 0.9rem 0;
+    color: #2d3e50;
+    font-weight: 600;
+}
+
+.course-sections{
+    margin-top: 0.75rem;
+}
+
+.course-sections .ui-collapsible{
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 0.8rem;
+    box-shadow: 0 8px 18px rgba(11, 58, 110, 0.12);
+}
+
+.course-sections .ui-collapsible-heading .ui-btn{
+    background: linear-gradient(180deg, #ffffff, #f2f7ff);
+    color: #12375e;
+    font-weight: 700;
+    border: 0;
+    padding-top: 0.95rem;
+    padding-bottom: 0.95rem;
+}
+
+.course-sections .ui-collapsible-content{
+    border-top: 1px solid #e4ecf7;
+    background: #ffffff;
+}
+
+.year-chip{
+    display: inline-block;
+    min-width: 38px;
+    text-align: center;
+    margin-right: 0.5rem;
+    padding: 0.25rem 0.45rem;
+    border-radius: 999px;
+    background: #0b5394;
+    color: #fff;
+    font-size: 0.8rem;
+    letter-spacing: 0.3px;
+}
+
+.year-title{
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.subject-list .ui-li-static{
+    border-left: 3px solid #0b5394;
+    margin-bottom: 0.35rem;
+    background: #fbfdff;
+}
+
+.subject-list li h4{
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    color: #0b5394;
+}
+
+.subject-list li p{
+    margin: 0;
+    color: #2d3e50;
+    line-height: 1.4;
+}

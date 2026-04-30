@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>MongoDB To-Do List</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container{
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input{
+            width: 70%;
+            padding: 10px;
+        }
+
+        button{
+            padding: 10px;
+            background: #1565c0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        li{
+            background: #eee;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 8px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btns button{
+            margin-left: 5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>MongoDB AJAX To-Do App</h2>
+
+    <input type="text"
+           id="taskInput"
+           placeholder="Enter Task">
+
+    <button onclick="addTask()">
+        Add
+    </button>
+
+    <hr>
+
+    <ul id="taskList"></ul>
+
+</div>
+
+<script>
+
+    // LOAD TASKS
+    $(document).ready(function () {
+
+        fetchTasks();
+    });
+
+    /* =========================
+       FETCH TASKS
+    ========================= */
+
+    function fetchTasks() {
+
+        $.ajax({
+
+            url: "/tasks",
+            type: "GET",
+
+            success: function(tasks) {
+
+                $("#taskList").html("");
+
+                tasks.forEach(task => {
+
+                    $("#taskList").append(`
+
+                        <li>
+
+                            <span>${task.text}</span>
+
+                            <div class="btns">
+
+                                <button onclick="updateTask('${task._id}', '${task.text}')">
+                                    Update
+                                </button>
+
+                                <button onclick="deleteTask('${task._id}')">
+                                    Delete
+                                </button>
+
+                            </div>
+
+                        </li>
+                    `);
+                });
+            }
+        });
+    }
+
+    /* =========================
+       ADD TASK
+    ========================= */
+
+    function addTask() {
+
+        let task = $("#taskInput").val();
+
+        if(task.trim() === "") {
+
+            alert("Enter task");
+            return;
+        }
+
+        $.ajax({
+
+            url: "/addTask",
+            type: "POST",
+
+            data: {
+                task: task
+            },
+
+            success: function() {
+
+                $("#taskInput").val("");
+
+                fetchTasks();
+            }
+        });
+    }
+
+    /* =========================
+       UPDATE TASK
+    ========================= */
+
+    function updateTask(id, oldTask) {
+
+        let updatedTask = prompt("Update Task", oldTask);
+
+        if(updatedTask != null) {
+
+            $.ajax({
+
+                url: "/updateTask/" + id,
+                type: "PUT",
+
+                data: {
+                    task: updatedTask
+                },
+
+                success: function() {
+
+                    fetchTasks();
+                }
+            });
+        }
+    }
+
+    /* =========================
+       DELETE TASK
+    ========================= */
+
+    function deleteTask(id) {
+
+        $.ajax({
+
+            url: "/deleteTask/" + id,
+            type: "DELETE",
+
+            success: function() {
+
+                fetchTasks();
+            }
+        });
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Portfolio - jQuery Mobile</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div data-role="page" id="about">
+        <div data-role="header" data-position="fixed">
+            <h1>My Portfolio</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="index.html" class="ui-btn-active" data-ajax="false">About</a></li>
+                    <li><a href="projects.html" data-ajax="false">Projects</a></li>
+                    <li><a href="skills.html" data-ajax="false">Skills</a></li>
+                    <li><a href="contact.html" data-ajax="false">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <section class="hero-card">
+                <div class="hero-top">
+                    <div class="avatar" aria-hidden="true">NR</div>
+                    <div>
+                        <p class="eyebrow">Information Technology Engineering Student</p>
+                        <h2>Neha Rajkumar Diwan</h2>
+                        <p class="hero-text">
+                            I am a passionate Information Technology Engineering student
+                            with a strong interest in software development,
+                            artificial intelligence, IoT systems, and backend technologies.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tag-row" aria-label="focus areas">
+                    <span class="tag">Hackathons</span>
+                    <span class="tag">DSA</span>
+                    <span class="tag">Web Development</span>
+                </div>
+
+                <p class="mini-note">Core focus areas</p>
+
+                <div class="info-panel">
+                    <h3>What I focus on</h3>
+                    <ul class="focus-list">
+                        <li>Hackathons</li>
+                        <li>DSA</li>
+                        <li>Web Development</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4><span class="footer-label">Portfolio Website</span> <span id="year"></span></h4>
+        </div>
+    </div>
+
+</body>
+</html>
